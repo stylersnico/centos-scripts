@@ -17,3 +17,9 @@ chkconfig --level 3 snmpd on
 
 echo "--> Restart services"
 /etc/init.d/snmpd stop && /etc/init.d/snmpd start
+
+echo "--> Show the launch at boot"
+ls /etc/rc3.d/*snmpd*
+
+echo "--> If you see a blue line, it's working !"
+
