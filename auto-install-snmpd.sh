@@ -9,7 +9,7 @@ fi
 echo "--> Updating CentOS System"
 yum -y update
 
-echo "--> Installing htop"
+echo "--> Installing snmp daemon"
 yum -y install net-snmp
 
 echo "--> Launch snmpd at boot"
